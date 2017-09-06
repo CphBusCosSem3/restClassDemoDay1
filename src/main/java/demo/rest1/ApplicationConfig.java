@@ -14,6 +14,7 @@ public class ApplicationConfig extends Application {
     }
 
     private void addRestResourceClasses(Set<Class<?>> resources) {
+        resources.add(demo.rest1.NotFoundMapper.class);
         resources.add(demo.rest1.PersonResource.class);
         resources.add(demo.rest1.TestResource.class);
     }
